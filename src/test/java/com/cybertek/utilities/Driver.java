@@ -38,14 +38,14 @@ public class Driver {
             Depending on the browser type our switch statement will determine
             to open specific type of browser/driver
              */
-        switch (browserType){
+            switch (browserType){
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     driver.manage().window().maximize();
                     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
-               case "firefox":
+                case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     driver.manage().window().maximize();
