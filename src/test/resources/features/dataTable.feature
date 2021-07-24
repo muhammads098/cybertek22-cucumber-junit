@@ -1,8 +1,9 @@
 Feature: Examples of Cucumber data table implementations
 
-  Scenario: Something happens
 
-    Then user should see words displayed
+  Scenario: Something happens
+    #Given user does something
+    Then user should see below words displayed
       | Apple      |
       | Kiwi       |
       | Orange     |
@@ -10,3 +11,11 @@ Feature: Examples of Cucumber data table implementations
       | Mango      |
       | Tomato     |
       | Cucumber   |
+
+  @wip
+  Scenario: Library login example using data table
+    Given user is on the login page of library app
+    When user enters username and password as below
+      | username | librarian13@library |
+      | password | 9rf6axdD            |
+    Then user should see title is something
