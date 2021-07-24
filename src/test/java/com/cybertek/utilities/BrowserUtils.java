@@ -7,6 +7,7 @@ import java.util.List;
 
 public class BrowserUtils {
 
+
     /**
      This method accepts a List<WebElements> and returns List<String>
      @param webElementList
